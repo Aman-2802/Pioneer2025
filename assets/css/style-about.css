@@ -9,10 +9,15 @@ section.event_img {
     padding: 0;
     margin: 0;
 }
+.event-container img{
+    padding-top: 10px;
+    width: 40%;
+    height:10%;
+}
 
 section.event_img .event-container {
     width: 80%;
-    height: 450px;
+    height: 400px;
     padding: 30px 0; /* Adjusted padding to reduce top and bottom space */
     text-align: center;
     background: white;
