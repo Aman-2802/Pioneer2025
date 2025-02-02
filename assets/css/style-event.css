@@ -342,7 +342,10 @@ body {
   .dept {
     text-align: center;
   }
-
+div.initiatives{
+  width: 400px;
+  height: 300px;
+}
  
 .initiatives {
   width: 500px; /* Adjust as needed */
