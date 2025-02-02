@@ -465,7 +465,7 @@ div.initiatives{
     padding: 10px;
   }
   .initiatives img {
-    width: 60px;
+    width: 100px;
   }
   .initiatives p {
     font-size: 14px;
@@ -483,13 +483,13 @@ div.initiatives{
     text-align: center;
   }
   .initiatives img {
-    width: 50px;
+    width: 90px;
   }
   .initiatives p {
-    font-size: 12px;
+    font-size: 14px;
   }
   .button {
-    font-size: 14px;
+    font-size: 16px;
     padding: 5px 10px;
   }
 }
