@@ -408,3 +408,25 @@ body {
         display: block;
     }
 }
+/* Media Query for Mobile Devices - 600px and below */
+@media (max-width: 600px) {
+    .college-name {
+        font-size: 1.2rem; /* Adjust the font size */
+        line-height: 1.3;  /* Adjust line height if necessary */
+    }
+}
+
+/* Media Query for Tablets - Between 601px and 768px */
+@media (min-width: 601px) and (max-width: 768px) {
+    .college-name {
+        font-size: 1.4rem; /* Slightly larger font size for tablets */
+        line-height: 1.5;
+    }
+}
+
+/* Media Query for Large Devices (Tablets & Small Desktops) */
+@media (min-width: 768px) {
+    .college-name {
+        font-size: 1.6rem; /* Default size for larger devices */
+    }
+}
