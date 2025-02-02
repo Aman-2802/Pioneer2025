@@ -343,21 +343,22 @@ body {
     text-align: center;
   }
 
-  .initiatives {
-    width: 500px; /* Adjust as needed */
-    height: 400px;
-    background: #1e252b;
-    border-radius: 15px;
-    padding: 30px;
-    text-align: center;
-    color: #c9a464;
-    position: relative;
-    overflow: hidden;
-    transition: all 0.4s ease-in-out;
-    border: 2px solid #c9a464;
-  }
-  
-  .initiatives::before,
+ 
+.initiatives {
+  width: 500px; /* Adjust as needed */
+  height: 400px;
+  background: #1e252b;
+  border-radius: 15px;
+  padding: 30px;
+  text-align: center;
+  color: #c9a464;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.4s ease-in-out;
+  border: 2px solid #9a7f51;
+}
+
+.initiatives::before,
 .initiatives::after {
   content: "";
   position: absolute;
@@ -393,41 +394,41 @@ body {
   margin-top: 5px;
   padding-bottom: 5px;
 }
-  
-  .details {
-    opacity: 0;
-    max-height: 0;
-    overflow: hidden;
-    transition: all 0.4s ease-in-out;
-  }
-  
-  .initiatives:hover {
-    height: auto;
-    padding: 50px;
-  }
-  
-  .initiatives:hover .details {
-    opacity: 1;
-    max-height: 500px;
-    margin-top: 10px;
-    transition-delay: 0.1s;
-  }
-  
-  .button {
-    background: #c9a464;
-    color: #1e252b;
-    border: none;
-    padding: 8px 12px;
-    font-size: 14px;
-    border-radius: 5px;
-    cursor: pointer;
-    display: none;
-    margin-top: 10px;
-  }
-  
-  .initiatives:hover .button {
-    display: inline-block;
-  }
+
+.details {
+  opacity: 0;
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.4s ease-in-out;
+}
+
+.initiatives:hover {
+  height: auto;
+  padding: 50px;
+}
+
+.initiatives:hover .details {
+  opacity: 1;
+  max-height: 500px;
+  margin-top: 10px;
+  transition-delay: 0.1s;
+}
+
+.button {
+  background: #c9a464;
+  color: #1e252b;
+  border: none;
+  padding: 8px 12px;
+  font-size: 14px;
+  border-radius: 5px;
+  cursor: pointer;
+  display: none;
+  margin-top: 10px;
+}
+
+.initiatives:hover .button {
+  display: inline-block;
+}
   /* Large screens (Desktops & Laptops) */
 @media (min-width: 1200px) {
   .initiatives {
