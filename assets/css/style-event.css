@@ -427,4 +427,66 @@ body {
   .initiatives:hover .button {
     display: inline-block;
   }
+/* Large screens (Desktops & Laptops) */
+@media (min-width: 1200px) {
+  .initiatives {
+    width: 300px;
+    height: 220px;
+  }
+  .initiatives p {
+    font-size: 18px;
+  }
+}
+
+/* Medium screens (Tablets) */
+@media (max-width: 1024px) {
+  .initiatives {
+    width: 250px;
+    height: 200px;
+  }
+  .initiatives p {
+    font-size: 16px;
+  }
+  .card-details {
+    padding: 10px;
+  }
+}
+
+/* Small screens (Mobile Devices) */
+@media (max-width: 768px) {
+  .initiatives {
+    width: 100%;
+    height: auto;
+    padding: 10px;
+  }
+  .initiatives img {
+    width: 60px;
+  }
+  .initiatives p {
+    font-size: 14px;
+  }
+  .details {
+    padding: 5px;
+  }
+}
+
+/* Extra Small screens (Phones) */
+@media (max-width: 480px) {
+  .initiatives {
+    width: 90%;
+    margin: auto;
+    text-align: center;
+  }
+  .initiatives img {
+    width: 50px;
+  }
+  .initiatives p {
+    font-size: 12px;
+  }
+  .button {
+    font-size: 14px;
+    padding: 5px 10px;
+  }
+}
+
   
