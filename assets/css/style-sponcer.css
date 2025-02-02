@@ -1,0 +1,78 @@
+.sponsors {
+    width: 100%;
+    padding: 50px 0;
+    background-size: cover;
+    color: white; /* Ensure text remains readable */
+    text-align: center;
+    position: relative;
+}
+
+
+.sponsor-title {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+/* Common styling for both blocks */
+.sponsor-block {
+    width: 80%;
+    margin: 0 auto 40px;
+    background: white;
+    border-radius: 12px;
+    padding: 30px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.sponsor-subtitle {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #555;
+}
+
+/* First Block: Featured Sponsors (Large, Hover Effect) */
+.featured-sponsors .sponsor-images {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.featured-sponsors .sponsor-images img {
+    width: 180px; /* Increased size */
+    height: 180px;
+    object-fit: cover;
+    border-radius: 12px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.featured-sponsors .sponsor-images img:hover {
+    transform: scale(1.2);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+/* Second Block: Other Sponsors (Smaller, No Hover) */
+.other-sponsors .sponsor-images {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+
+.other-sponsors .sponsor-images img {
+    width: 130px; /* Increased size */
+    height: 130px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.more-sponsors-dots {
+    font-size: 3rem;   /* Bigger dots */
+    font-weight: bold;
+    color: #888;
+    display: block;     /* Moves dots to a new line */
+    text-align: center;
+    margin-top: 20px;   /* Adds more space between images and dots */
+    padding-bottom: 10px; /* Positions dots slightly lower */
+}
