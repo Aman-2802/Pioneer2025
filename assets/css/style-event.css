@@ -342,8 +342,7 @@ body {
   .dept {
     text-align: center;
   }
-  
-  .initiatives {
+ .initiatives {
     width: 400px; /* Adjust as needed */
     height: 300px;
     background: #1e252b;
@@ -427,7 +426,7 @@ body {
   .initiatives:hover .button {
     display: inline-block;
   }
-/* Large screens (Desktops & Laptops) */
+  /* Large screens (Desktops & Laptops) */
 @media (min-width: 1200px) {
   .initiatives {
     width: 300px;
@@ -488,5 +487,3 @@ body {
     padding: 5px 10px;
   }
 }
-
-  
