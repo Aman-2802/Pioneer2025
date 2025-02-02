@@ -358,41 +358,41 @@ body {
   }
   
   .initiatives::before,
-  .initiatives::after {
-    content: "";
-    position: absolute;
-    border: 1px solid #c9a464;
-    width: 90%;
-    height: 90%;
-    top: 5%;
-    left: 5%;
-    border-radius: 10px;
-    pointer-events: none;
-    
-  }
+.initiatives::after {
+  content: "";
+  position: absolute;
+  border: 1px solid #c9a464;
+  width: 90%;
+  height: 90%;
+  top: 5%;
+  left: 5%;
+  border-radius: 10px;
+  pointer-events: none;
   
-  .initiatives::after {
-    width: 80%;
-    height: 80%;
-    top: 5%;
-    bottom: 5%;
-    left: 10%;
-  }
-  
-  .initiatives .event{
-    color: rgb(4, 172, 209);
-  }
-  .initiatives img {
-    width: 200px;
-    height: 100px;
-  }
-  
-  .initiatives p {
-    font-size: 18px;
-    font-weight: bold;
-    margin-top: 5px;
-      margin-bottom:10px;
-  }
+}
+
+.initiatives::after {
+  width: 80%;
+  height: 80%;
+  top: 10%;
+  bottom: 10%;
+  left: 10%;
+}
+
+.initiatives .event{
+  color: rgb(4, 172, 209);
+}
+.initiatives img {
+  width: 200px;
+  height: 100px;
+}
+
+.initiatives p {
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 5px;
+  padding-bottom: 5px;
+}
   
   .details {
     opacity: 0;
