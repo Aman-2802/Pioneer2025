@@ -36,7 +36,7 @@ Author URL: http://w3layouts.com
               aria-label="Toggle navigation">
               <span class="navbar-toggler-icon fa icon-expand fa-bars"></span>
               <span class="navbar-toggler-icon fa icon-close fa-times"></span>
-              </span>
+              
           </button>
 
           <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
@@ -472,6 +472,19 @@ Author URL: http://w3layouts.com
     });
   });
 </script>
+<!-- 	  toggal -->
+	   <script>
+        // Wait for the DOM to be ready
+        document.addEventListener("DOMContentLoaded", function() {
+          const navbarToggler = document.querySelector('.navbar-toggler');
+          const navbarCollapse = document.querySelector('#navbarTogglerDemo02');
+      
+          navbarToggler.addEventListener('click', function() {
+            // Toggle the collapse
+            navbarCollapse.classList.toggle('collapse');
+          });
+        });
+      </script>
 <!--//MENU-JS-->
 <script src="assets/js/bootstrap.min.js"></script>
 	  <script src="about-script.js"></script>
