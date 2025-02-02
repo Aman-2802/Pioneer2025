@@ -342,12 +342,13 @@ body {
   .dept {
     text-align: center;
   }
- .initiatives {
-    width: 400px; /* Adjust as needed */
-    height: 300px;
+
+  .initiatives {
+    width: 500px; /* Adjust as needed */
+    height: 400px;
     background: #1e252b;
     border-radius: 15px;
-    padding: 50px;
+    padding: 30px;
     text-align: center;
     color: #c9a464;
     position: relative;
@@ -373,8 +374,8 @@ body {
   .initiatives::after {
     width: 80%;
     height: 80%;
-    top: 12%;
-    bottom: 12%;
+    top: 10%;
+    bottom: 10%;
     left: 10%;
   }
   
