@@ -154,13 +154,13 @@ div.CentralCommitee{
     top: 15%;
     
 }
-
 .volunteers h3 {
     font-size: 20px;
     font-weight: bold;
     margin-bottom: 20px;
     color: #d4af7a;
 }
+
 /* Animation for Staggered Appearance */
 @keyframes fadeUp {
     0% {
@@ -244,7 +244,6 @@ div.CentralCommitee{
     .commit-member, 
     .volunteer {
         width: 85%;
-        height:200px;
         padding: 20px;
     }
 
