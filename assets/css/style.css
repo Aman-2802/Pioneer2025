@@ -108,7 +108,10 @@ body {
     font-size: 16px;
     color: #666;
   }
-  
+  .middle{
+  background-image: url('/images/kit.jpeg');
+}
+
   /* wecome massage
    */
    .welcome {
