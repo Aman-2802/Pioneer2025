@@ -36,6 +36,7 @@ section.event_img .event-container .event-date {
     font-size: 3rem;
     margin: 15px 0;
     color: #333;
+    margin-top: 40px;
 }
 
 section.event_img .event-container .event-button {
@@ -172,261 +173,171 @@ section.block_2 .container_2 p {
     margin-right: 20px; /* Space between images */
     border-radius: 8px;
 }
-
-@keyframes scroll {
-    0% {
-        transform: translateX(0);
-    }
-    100% {
-        transform: translateX(-100%);
-    }
-}
-/* Base styles for all screen sizes */
-body {
-    font-family: Arial, sans-serif;
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-/* Navbar adjustments */
-@media screen and (max-width: 992px) {
-    .navbar-toggler {
-        background-color: #fff;
+/* Default Styles */
+.container_1, .container_2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Adjusting College Logo and Name */
+.college-header {
+   
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+    gap: 10px;
+}
+
+.college-logo img {
+    width: 80px; /* Adjust logo size */
+    height: auto;
+}
+
+.college-name {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Event and Feature Sections */
+.event-container, .feature-container {
+  
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    text-align: center;
+ 
+}
+
+.event-box, .feature-box {
+    width: 90%;
+    max-width: 400px;
+    padding: 15px;
+    background-color: #f8f8f8;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.event-img img {
+    width: 100%;
+    max-height: 200px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 576px) {
+    .college-header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
     }
 
-    .navbar-collapse {
+    .college-logo img {
+        width: 60%;
+    }
+
+    .college-name {
+        font-size: 20px;
+    }
+
+    .event-container, .feature-container {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .event-box, .feature-box {
         width: 100%;
-        display: block;
-        text-align: center;
     }
-
-    .navbar-nav {
-        margin: 0;
-        padding: 0;
-    }
-
-    .navbar-nav .nav-item {
-        display: block;
-        margin: 10px 0;
-    }
-
-    .navbar-nav .nav-link {
-        padding: 8px 15px;
-        font-size: 16px;
-    }
-
-    .navbar-toggler .fa-bars {
-        display: inline;
-    }
-
-    .navbar-toggler .fa-times {
-        display: none;
-    }
-
-    .navbar-toggler.collapsed .fa-bars {
-        display: none;
-    }
-
-    .navbar-toggler.collapsed .fa-times {
-        display: inline;
-    }
-}
-
-/* Adjusting header and breadcrumb for smaller screens */
-@media screen and (max-width: 768px) {
-    .title-big {
-        font-size: 22px;
-    }
-
-    .breadcrumb-area .title-big {
-        font-size: 18px;
-    }
-
-    .breadcrumb-area .breadcrumb {
+    div.event-date{
+        margin-top: 20px;
         font-size: 14px;
-    }
-
-    .breadcrumb-area .breadcrumb a {
-        text-decoration: none;
-    }
-
-    .breadcrumb-area .breadcrumb li.active {
-        color: #333;
-    }
-}
-
-/* Adjusting image section for smaller devices */
-@media screen and (max-width: 768px) {
-    .event-container img {
-        max-width: 100%;
-        height: auto;
-    }
-
-    .event-container {
-        text-align: center;
-    }
-
-    .event-date {
-        font-size: 16px;
     }
 
     .event-button {
         font-size: 14px;
-        padding: 10px 20px;
+        padding: 8px 12px;
     }
 }
 
-/* Middle content section */
-@media screen and (max-width: 768px) {
-    .title_1, .title_2 {
-        font-size: 20px;
+/* Tablets (576px - 768px) */
+@media screen and (min-width: 577px) and (max-width: 768px) {
+    .college-logo img {
+        width: 70px;
     }
-
-    .block_1, .block_2 {
-        padding: 20px 15px;
-    }
-
-    .w3-services-grids .row_1 {
-        flex-direction: column;
-    }
-
-    .w3-services-right-grid .fea-gd-vv {
-        flex-direction: column;
-    }
-
-    .fea-gd-vv .col-lg-6 {
-        width: 100%;
-        margin-bottom: 15px;
-    }
-
-    .fea-gd-vv .col-lg-6 .icon {
-        font-size: 30px;
-    }
-
-    .fea-gd-vv .col-lg-6 .icon-info h5 {
-        font-size: 18px;
-    }
-
-    .fea-gd-vv .col-lg-6 .icon-info p {
+    div.event-date{
         font-size: 14px;
     }
-}
-
-/* Scroll image section */
-@media screen and (max-width: 600px) {
-    .scroll-container {
-        overflow-x: scroll;
-        white-space: nowrap;
-    }
-
-    .scroll-images-wrapper {
-        display: inline-block;
-    }
-
-    .scroll-images img {
-        max-width: 90%;
-        margin: 0 5px;
-    }
-}
-
-/* Adjust event and schedule section */
-@media screen and (max-width: 768px) {
-    .header-section .title-big {
+    .college-name {
         font-size: 22px;
     }
 
-    .resp-tabs-list {
-        display: block;
+    .event-container, .feature-container {
+        justify-content: center;
+        gap: 15px;
     }
 
-    .resp-tabs-list li {
-        display: inline-block;
-        width: 100%;
-        text-align: center;
-        padding: 10px 0;
-        font-size: 16px;
-    }
-
-    .resp-tabs-container {
-        padding: 20px 0;
-    }
-
-    .products-content h3 {
-        font-size: 18px;
-    }
-
-    .products-content ul {
-        font-size: 14px;
-        padding-left: 20px;
-    }
-
-    .products-content .col-md-4,
-    .products-content .col-md-8 {
-        width: 100%;
-    }
-
-    .products-content .col-md-8 {
-        margin-top: 20px;
-    }
-
-    .img-circle {
-        display: none;
+    .event-box, .feature-box {
+        width: 80%;
     }
 }
 
-/* Footer adjustments */
-@media screen and (max-width: 768px) {
-    .footer-list-29 {
-        margin-bottom: 20px;
+
+
+/* Large Screens (Above 992px) */
+@media screen and (min-width: 993px) {
+    .college-header {
+        justify-content: space-between;
     }
 
-    .footer-title-29 {
-        font-size: 18px;
+    .college-logo img {
+        width: 100px;
     }
-
-    .footer-list-29 a {
+    div.event-date{
         font-size: 14px;
     }
-
-    .social a {
-        font-size: 20px;
-        margin: 0 10px;
-    }
-
-    .social {
-        margin-top: 20px;
-    }
-
-    .copy-footer-29 {
-        font-size: 14px;
-    }
-}
-
-/* "Go to top" button for mobile devices */
-@media screen and (max-width: 768px) {
-    #movetop {
-        bottom: 50px;
-        right: 20px;
-        display: block;
-    }
-}
-/* Media Query for Mobile Devices - 600px and below */
-@media (max-width: 600px) {
     .college-name {
-        font-size: 1.2rem; /* Adjust the font size */
-        line-height: 1.3;  /* Adjust line height if necessary */
+        font-size: 26px;
     }
-}
 
-/* Media Query for Tablets - Between 601px and 768px */
-@media (min-width: 601px) and (max-width: 768px) {
-    .college-name {
-        font-size: 1.4rem; /* Slightly larger font size for tablets */
-        line-height: 1.5;
+    .event-box, .feature-box {
+        width: 30%;
     }
 }
-
-/* Media Query for Large Devices (Tablets & Small Desktops) */
-@media (min-width: 768px) {
-    .college-name {
-        font-size: 1.6rem; /* Default size for larger devices */
+.event-container {
+  
+    flex-direction: column; /* Stack logo and text vertically */
+    align-items: center;
+    text-align: center;
+  }
+  
+  .event-date {
+    font-size: clamp(1rem, 4vw, 1.8rem); /* Adjust text dynamically */
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+    line-height: 1.3; /* Fix overlapping by increasing spacing */
+    margin-top: 10px;
+  }
+  
+  /* ✅ Extra small screens (Mobile Phones) */
+  @media (max-width: 480px) {
+    .event-date {
+      font-size: 1rem; /* Smaller text for mobile */
+      line-height: 1.1;
+      
     }
-}
+  }
+  
