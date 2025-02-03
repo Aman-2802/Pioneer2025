@@ -490,6 +490,56 @@ Author URL: http://w3layouts.com
           });
         });
       </script>
+<!-- 	  image slider -->
+	  <script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const images = document.querySelectorAll(".gallery-image");
+    const totalImages = images.length;
+    let currentIndex = 0;
+    let interval;
+
+    function showImage(index) {
+        images.forEach((img, i) => {
+            img.style.display = i === index ? "block" : "none";
+        });
+    }
+
+    function nextImage() {
+        currentIndex = (currentIndex + 1) % totalImages;
+        showImage(currentIndex);
+    }
+
+    function prevImage() {
+        currentIndex = (currentIndex - 1 + totalImages) % totalImages;
+        showImage(currentIndex);
+    }
+
+    function startAutoSlide() {
+        interval = setInterval(nextImage, 3000); // Change image every 3 seconds
+    }
+
+    function stopAutoSlide() {
+        clearInterval(interval);
+    }
+
+    document.querySelector(".gallery-control.next").addEventListener("click", function () {
+        stopAutoSlide();
+        nextImage();
+        startAutoSlide();
+    });
+
+    document.querySelector(".gallery-control.prev").addEventListener("click", function () {
+        stopAutoSlide();
+        prevImage();
+        startAutoSlide();
+    });
+
+    // Initialize slider
+    showImage(currentIndex);
+    startAutoSlide();
+});
+
+</script>
 <!--//MENU-JS-->
 <script src="assets/js/bootstrap.min.js"></script>
 	
