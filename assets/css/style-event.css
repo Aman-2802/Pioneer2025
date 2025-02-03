@@ -493,3 +493,69 @@ div.initiatives{
     padding: 5px 10px;
   }
 }
+
+/* For tablets and small screens (max-width: 768px) */
+@media screen and (max-width: 768px) {
+  .initiatives {
+      text-align: center;
+      padding: 20px;
+      max-width: 90%;
+      margin: 0 auto;
+  }
+
+  .initiatives img {
+      width: 60%; /* Ensure a decent size */
+      max-width: 200px; /* Prevent image from being too large */
+      height: auto;
+      display: block;
+      margin: 0 auto 10px;
+  }
+
+  .details {
+      padding: 15px;
+  }
+
+  .card-details {
+      text-align: center;
+  }
+
+  .card-details h2 {
+      font-size: 20px;
+  }
+
+  .card-details p {
+      font-size: 14px;
+      margin: 5px;
+  }
+
+  .button {
+      font-size: 14px;
+      padding: 8px 12px;
+      display: block;
+      width: 80%;
+      margin: 10px auto;
+      text-align: center;
+  }
+}
+
+/* For extra small screens (max-width: 480px) */
+@media screen and (max-width: 480px) {
+  .initiatives img {
+      width: 70%; /* Keep the image visible and clear */
+      max-width: 180px;
+  }
+
+  .card-details h2 {
+      font-size: 18px;
+  }
+
+  .card-details p {
+      font-size: 13px;
+      margin: 5px;
+  }
+
+  .button {
+      font-size: 12px;
+      padding: 6px 10px;
+  }
+}
