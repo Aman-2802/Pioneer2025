@@ -1,0 +1,261 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #1bd3f8;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    color: white;
+}
+
+h1, h3, h2 {
+    font-family: 'Arial', sans-serif;
+    color: #d4af7a;
+}
+
+/* Container Styles */
+.team-container {
+    padding: 50px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+/* Team Member Card Styles */
+.team-member, .commit-member, .volunteer {
+    background: #D9DFC6;
+    padding: 40px;
+    width:300px;
+    text-align: center;
+    border-radius: 15px;
+    position: relative;
+    margin: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease-in-out;
+    opacity: 0;
+    transform: translateY(50px);
+}
+
+.team-member:hover, .commit-member:hover, .volunteer:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+}
+
+/* Hover Effects */
+.team-member:hover .image-container,
+.commit-member:hover .image-container,
+.volunteer:hover .image-container {
+    transform: scale(1.1);
+}
+
+/* Image Container */
+.image-container {
+    width: 100%;
+    height: 250px; /* Fixed height */
+    position: relative;
+    margin-bottom: 15px;
+    overflow: hidden;
+    border: 2px solid rgb(126, 94, 6); /* Outer border */
+    transition: transform 0.3s ease-in-out;
+    border-radius: 20px;
+    padding: 5px;
+}
+
+.image-container::before {
+    content: '';
+    position: absolute;
+    top: 4px; /* Position inside the container */
+    left: 4px;
+    right: 4px;
+    bottom: 4px;
+    border: 2px solid rgb(107, 82, 5); /* Inner border */
+    pointer-events: none; /* Ensures that the pseudo-element does not interfere with mouse events */
+    border-radius: 20px;
+    
+}
+
+
+.image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit:fill;  /* Ensures the image fits without cropping */
+    object-position: center; /* Ensures the image is centered in the box */
+}
+
+.image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;  /* Ensures the image fits without cropping */
+    object-position: center; /* Ensures the image is centered in the box */
+}
+
+
+h2 {
+    margin-top: 10px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+p {
+    font-size: 14px;
+}
+
+/* Director's Card */
+.director {
+    padding: 20px;
+    width: 350px;
+    margin-top: 20px;
+    height: 425px;
+}
+
+/* Commit Members Styles */
+.commit-members {
+    margin-top: 60px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+div.CentralCommitee{
+    height: 500px !important;
+
+}
+.commit-member {
+    margin-top: 30px;
+    width: 300px;
+    height: 450px;
+}
+
+.h3 {
+    margin-top: 70px;
+    font-weight: bold;
+    color: #d4af7a;
+    margin-bottom: 10px;
+}
+.commit-member .h3 {
+    margin-top: 100px;
+}
+
+/* Volunteers Styles */
+.volunteers {
+    margin-top: 60px;
+    width: 450px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.volunteer{
+    margin-top: 40px;
+    width: 300px;
+    height: 450px;
+    top: 15%;
+    
+}
+.volunteers h3 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #d4af7a;
+}
+
+/* Animation for Staggered Appearance */
+@keyframes fadeUp {
+    0% {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Stagger Effect for Commit Members */
+.commit-member:nth-child(1) {
+    animation: fadeUp 0.6s ease-out 0.2s forwards;
+}
+
+.commit-member:nth-child(2) {
+    animation: fadeUp 0.6s ease-out 0.4s forwards;
+}
+
+.commit-member:nth-child(3) {
+    animation: fadeUp 0.6s ease-out 0.6s forwards;
+}
+
+/* Stagger Effect for Volunteers */
+.volunteer:nth-child(1) {
+    animation: fadeUp 0.6s ease-out 0.8s forwards;
+}
+
+.volunteer:nth-child(2) {
+    animation: fadeUp 0.6s ease-out 1s forwards;
+}
+
+.volunteer:nth-child(3) {
+    animation: fadeUp 0.6s ease-out 1.2s forwards;
+}
+/* For small screens (max-width: 768px) */
+@media screen and (max-width: 768px) {
+    .team-container {
+        flex-direction: column;
+        padding: 20px;
+        margin-top: 50px;
+    }
+
+    .team-member, 
+    .commit-member, 
+    .volunteer {
+        width: 80%; /* Make each card take full width */
+        max-width: 350px;
+        margin: 10px auto; /* Center align */
+        height: auto;
+        padding: 30px;
+    }
+
+    .image-container {
+        height: 200px; /* Reduce image height for better fit */
+    }
+
+    .director {
+        width: 90%;
+        max-width: 350px;
+        height: auto;
+    }
+
+    .commit-members, 
+    .volunteers {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    div.CentralCommitee {
+        height: auto !important; /* Allow auto height to prevent overflow */
+    }
+}
+
+/* For extra small screens (max-width: 480px) */
+@media screen and (max-width: 480px) {
+    .team-member, 
+    .commit-member, 
+    .volunteer {
+        width: 85%;
+        padding: 20px;
+    }
+
+    .image-container {
+        height: 180px; /* Further reduce height for smaller screens */
+    }
+
+    h2 {
+        font-size: 14px;
+    }
+
+    p {
+        font-size: 10px;
+    }
+}
