@@ -76,3 +76,122 @@
     margin-top: 20px;   /* Adds more space between images and dots */
     padding-bottom: 10px; /* Positions dots slightly lower */
 }
+/* Base Styles (Mobile-first Approach) */
+/* These styles will apply to all devices by default */
+
+/* Extra Small Devices (Phones, up to 576px) */
+@media (max-width: 576px) {
+    .navbar-nav {
+      text-align: center;
+    }
+  
+    .sponsor-images img {
+      width: 80%; /* Adjust image size for small screens */
+      margin: 10px auto;
+      display: block;
+    }
+  
+    .footer-list-29 {
+      text-align: center;
+    }
+  }
+  
+  /* Small Devices (Tablets, 577px - 768px) */
+  @media (min-width: 577px) and (max-width: 768px) {
+    .navbar-toggler {
+      font-size: 1.2rem;
+    }
+  
+    .sponsor-images img {
+      width: 70%;
+      margin: 10px auto;
+    }
+  
+    .footer-list-29 {
+      text-align: center;
+    }
+  }
+  
+  /* Medium Devices (Laptops, 769px - 992px) */
+  @media (min-width: 769px) and (max-width: 992px) {
+    .sponsor-images img {
+      width: 50%;
+    }
+  
+    .sponsor-title {
+      font-size: 1.5rem;
+    }
+  
+    .footer-list-29 {
+      text-align: left;
+    }
+  }
+  
+  /* Large Devices (Desktops, 993px - 1200px) */
+  @media (min-width: 993px) and (max-width: 1200px) {
+    .sponsor-images img {
+      width: 40%;
+    }
+  
+    .sponsor-title {
+      font-size: 1.8rem;
+    }
+  }
+  
+  /* Extra Large Devices (Large Desktops, 1201px and above) */
+  @media (min-width: 1201px) {
+    .sponsor-images img {
+      width: 30%;
+    }
+  
+    .sponsor-title {
+      font-size: 2rem;
+    }
+  }
+  
+
+  /* Default Layout: Horizontal layout */
+.featured-sponsors .sponsor-images {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.featured-sponsors .sponsor-images img {
+    width: 180px; /* Adjust the width as per your design */
+    height: 180px;
+    object-fit: cover;
+    border-radius: 12px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.featured-sponsors .sponsor-images img:hover {
+    transform: scale(1.2);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+/* Media Query for Small Devices (Phones, up to 576px) */
+@media (max-width: 576px) {
+    .featured-sponsors .sponsor-images {
+        display: block; /* Stack the images vertically */
+        text-align: center; /* Center the images */
+    }
+
+    .featured-sponsors .sponsor-images img {
+        width: 100%; /* Adjust the width for small screens */
+        margin: 10px auto; /* Center and add spacing between images */
+    }
+}
+
+/* Media Query for Small Devices (Tablets, 577px - 768px) */
+@media (min-width: 577px) and (max-width: 768px) {
+    .featured-sponsors .sponsor-images {
+        display: block; /* Stack the images vertically */
+        text-align: center; /* Center the images */
+    }
+
+    .featured-sponsors .sponsor-images img {
+        width: 100%; /* Adjust the width for tablets */
+        margin: 10px auto; /* Center and add spacing between images */
+    }
+}
