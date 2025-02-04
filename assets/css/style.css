@@ -3,12 +3,13 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background:white;
+    background-color: #f9f9f9;
   }
-  
+   /* pioneer */
+ 
   /* Banner Section */
   .w3l-banner1 {
-    padding: 25px 0;
+    padding: 50px 0;
     background-color: #fff;
     text-align: center;
   }
@@ -16,7 +17,7 @@ body {
   /* Gallery Container */
   .gallery-container {
     position: relative;
-    height: 600px;
+    height: 650px;
     width: 80%;
     margin: 80px auto;
     overflow: hidden;
@@ -90,13 +91,13 @@ body {
   .title-small {
     font-size: 20px;
     font-weight: bold;
-    color: #fff6f6;
+    color: #444;
   }
   
   .title-banner {
     font-size: 36px;
     font-weight: 700;
-    color: #fff6f6;
+    color: #222;
   }
   
   .title-banner span {
@@ -105,8 +106,14 @@ body {
   
   .mt-4 {
     font-size: 16px;
-    color: #ffffff;
+    color: #666;
   }
+  .middle{
+  background-image: url('/images/kit.jpeg');
+}
+
+  /* wecome massage
+   */
 .welcome {
   margin-bottom: 200px;
   text-align: center;
@@ -120,7 +127,7 @@ body {
   justify-content: center;
   width: 90%;
   height: 300px;
-  background-image: url('back.jpg');
+  background-image: url('images/back.jpg');
   /* Centering the div */
   position: absolute; /* Use fixed if you want it to remain in place on scroll */
   top: 50%;
@@ -132,38 +139,121 @@ body {
   max-width: 500px;
   box-shadow: 0px 4px 10px rgba(0.1, 0.1, 0.2, 0.2);
 }
-/* dark mode */
+@media (max-width: 768px) {
+    .welcome {
+        width: 100%; /* Adjust width for tablets */
+        padding: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .welcome {
+        width: 90%; /* Adjust width for mobile */
+        padding: 10px;
+        font-size: 14px;
+    }
+}
+
+  /* Responsive Design */
+  @media (max-width: 992px) {
+    .gallery-container {
+      max-width: 90%;
+      padding: 10px;
+        height:400px;
+        width:100%;
+    }
+  
+    .gallery-control {
+      font-size: 18px;
+      padding: 8px 12px;
+    }
+  
+    .title-banner {
+      font-size: 28px;
+    }
+  
+    .title-small {
+      font-size: 18px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .gallery-container {
+      max-width: 95%;
+    }
+  
+    .gallery-image {
+      border-radius: 5px;
+    }
+  
+    .gallery-control {
+      font-size: 16px;
+      padding: 6px 10px;
+    }
+  
+    .title-banner {
+      font-size: 24px;
+    }
+  
+    .title-small {
+      font-size: 16px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .gallery-container {
+      max-width: 100%;
+        height:400px;
+    }
+  
+    .gallery-image {
+      border-radius: 3px;
+    }
+  
+    .gallery-control {
+      font-size: 14px;
+      padding: 5px 8px;
+    }
+  
+    .title-banner {
+      font-size: 20px;
+    }
+  
+    .title-small {
+      font-size: 14px;
+    }
+  }
+  
+  /* toggal buttaon */
+.navbar-toggler {
+    border: none;
+    outline: none;
+    padding: 8px 12px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.navbar-toggler-icon {
+    font-size: 1.5rem;
+    transition: opacity 0.3s ease;
+}
+
+/* Initially, hide the close (fa-times) icon */
+.icon-close {
+    display: none;
+}
+
+/* When the navbar is open, hide the menu (fa-bars) icon and show the close (fa-times) icon */
+.navbar-toggler.active .icon-expand {
+    display: none;
+}
+
+.navbar-toggler.active .icon-close {
+    display: inline-block;
+}
 /* 🌞 Light Mode (Default) */
 body {
   background-color: #ffffff;
-  color: #000000; /* Ensure text is black in light mode */
-  transition: all 0.3s ease-in-out;
-}
-
-/* 🌙 Dark Mode */
-.dark-mode {
-  background-color: #121212 !important; /* Dark background */
-  color: #ffffff !important; /* Ensure text turns white */
-}
-
-/* Ensure Links Change Color in Dark Mode */
-.dark-mode a {
-  color: #ffcc00 !important; /* Change link color in dark mode */
-}
-
-/* Ensure Specific Elements Adjust for Dark Mode */
-.dark-mode h1, 
-.dark-mode h2, 
-.dark-mode h3, 
-.dark-mode p, 
-.dark-mode span, 
-.dark-mode div {
-  color: #ffffff !important; /* Force all text to be white */
-}
-/* 🌞 Light Mode (Default) */
-body {
-  background: rgb(255, 255, 255);
-   
   color: #000000; 
   transition: all 0.3s ease-in-out;
 }
@@ -235,94 +325,7 @@ a {
   color: #ffffff !important;
 }
 
-
-  /* wecome massage
-   */
-   
-@media (max-width: 768px) {
-    .welcome {
-        width: 100%; /* Adjust width for tablets */
-        padding: 15px;
-    }
-}
-
-@media (max-width: 480px) {
-    .welcome {
-        width: 90%; /* Adjust width for mobile */
-        padding: 10px;
-        font-size: 14px;
-    }
-}
-
-  /* Responsive Design */
-  @media (max-width: 992px) {
-    .gallery-container {
-      max-width: 90%;
-      padding: 10px;
-    }
-  
-    .gallery-control {
-      font-size: 18px;
-      padding: 8px 12px;
-    }
-  
-    .title-banner {
-      font-size: 28px;
-    }
-  
-    .title-small {
-      font-size: 18px;
-    }
-  }
-  
-  @media (max-width: 768px) {
-    .gallery-container {
-      max-width: 95%;
-    }
-  
-    .gallery-image {
-      border-radius: 5px;
-    }
-  
-    .gallery-control {
-      font-size: 16px;
-      padding: 6px 10px;
-    }
-  
-    .title-banner {
-      font-size: 24px;
-    }
-  
-    .title-small {
-      font-size: 16px;
-    }
-  }
-  
-  @media (max-width: 480px) {
-    .gallery-container {
-      max-width: 100%;
-    }
-  
-    .gallery-image {
-      border-radius: 3px;
-    }
-  
-    .gallery-control {
-      font-size: 14px;
-      padding: 5px 8px;
-    }
-  
-    .title-banner {
-      font-size: 20px;
-    }
-  
-    .title-small {
-      font-size: 14px;
-    }
-  }
-  
-  /* poster */
-  .infinite-scroll-section {
+ .infinite-scroll-section {
   overflow: hidden;
   white-space: nowrap;
   position: relative;
@@ -352,32 +355,5 @@ a {
   }
 }
 
-.middle{
-  background-image: url('/images/kit.jpeg');
-}
 
-.countdown {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 20px; /* Adjust spacing */
-  flex-wrap: wrap;
-}
-
-.countdown img {
-  width: 80px; /* Adjust size as needed */
-  height: auto;
-  position: absolute;
-  top: -60px; /* Adjust to position it above the countdown */
-  left: 50%;
-  transform: translateX(-50%);
-}
-
-@media (max-width: 768px) {
-  .countdown img {
-      width: 60px; /* Smaller image for mobile */
-      top: -50px;
-  }
-}
-
+  
