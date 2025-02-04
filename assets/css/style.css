@@ -126,9 +126,9 @@ height: 300px;
 
 /* Centering the div */
 position: absolute; /* Use fixed if you want it to remain in place on scroll */
-top: 50%;
+top: 10%;
 left: 50%;
-transform: translate(-50%, 50%);
+transform: translate(-50%, 9%);
 
 /* Optional: Set width and max-width */
 width: 60%;
