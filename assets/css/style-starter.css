@@ -9924,7 +9924,7 @@ a.link-style:hover:before {
   text-transform: uppercase;
   line-height: 2em;
   letter-spacing: 1px;
-  color:white;  }
+   color:#ffffff;   }
 
 .title-small span {
   color: var(--heading-color); }
