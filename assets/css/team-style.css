@@ -235,7 +235,7 @@ div.CentralCommitee {
     .commit-member, 
     .volunteer {
         width: 75%; /* Make each card take full width */
-        max-width: 350px;
+        max-width: 300px;
         margin: 10px auto; /* Center align */
         height: auto;
         padding: 30px;
