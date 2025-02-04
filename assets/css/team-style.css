@@ -118,10 +118,35 @@ p {
     justify-content: center;
     align-items: center;
 }
-div.CentralCommitee{
-    height: 500px !important;
-
+div.CentralCommitee {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 boxes per row */
+    gap: 20px; /* Spacing between boxes */
+    justify-content: center;
+    align-items: center;
+    height: auto !important; /* Allow height to adjust */
+    padding: 20px;
 }
+
+/* Responsive Design */
+@media screen and (max-width: 1024px) {
+    div.CentralCommitee {
+        grid-template-columns: repeat(3, 1fr); /* 3 boxes per row */
+    }
+}
+
+@media screen and (max-width: 768px) {
+    div.CentralCommitee {
+        grid-template-columns: repeat(2, 1fr); /* 2 boxes per row */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    div.CentralCommitee {
+        grid-template-columns: repeat(1, 1fr); /* 1 box per row */
+    }
+}
+
 .commit-member {
     margin-top: 30px;
     width: 300px;
