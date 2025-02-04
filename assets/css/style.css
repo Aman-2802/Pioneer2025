@@ -447,4 +447,51 @@ a {
         object-fit: contain; /* Prevents cropping */
     }
 }
+@media screen and (max-width: 768px) {
+    .box {
+        padding: 20px; /* Reduce padding */
+        flex-direction: column; /* Stack elements */
+    }
 
+    .about-right-faq {
+        width: 100%;
+        padding: 15px; /* Adjust padding */
+    }
+
+    .title-small {
+        font-size: 16px; /* Adjust heading size */
+    }
+
+    .title-banner {
+        font-size: 20px; /* Adjust title size */
+    }
+
+    .title-banner span {
+        font-size: 22px;
+        color: #007bff; /* Highlight span */
+    }
+
+    .about-right-faq p {
+        font-size: 14px;
+        line-height: 1.6;
+    }
+}
+
+/* Extra Small Devices (Phones) */
+@media screen and (max-width: 480px) {
+    .title-small {
+        font-size: 14px;
+    }
+
+    .title-banner {
+        font-size: 18px;
+    }
+
+    .title-banner span {
+        font-size: 20px;
+    }
+
+    .about-right-faq p {
+        font-size: 13px;
+    }
+}
