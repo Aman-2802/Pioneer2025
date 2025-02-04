@@ -382,4 +382,69 @@ a {
       top: -50px;
   }
 }
+/* Default styles for larger screens (Laptop & Desktop) */
+.gallery-container {
+    width: 100%;
+    max-width: 1200px; /* Limits max width */
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+}
+
+.gallery-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px; /* Space between images */
+}
+
+.gallery-image {
+    width: calc(25% - 10px); /* 4 images per row on desktop */
+    height: auto;
+    max-height: 250px; /* Prevents oversized images */
+    object-fit: cover; /* Ensures images look good */
+    border-radius: 10px;
+}
+
+/* Controls */
+.gallery-control {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px 15px;
+    font-size: 20px;
+}
+
+/* ✅ Tablet View (2 Images Per Row) */
+@media screen and (max-width: 1024px) {
+    .gallery-image {
+        width: calc(50% - 10px); /* 2 images per row */
+        max-height: 220px;
+    }
+}
+
+/* ✅ Mobile View (1 Image Per Row, Full Width) */
+@media screen and (max-width: 768px) {
+    .gallery-wrapper {
+        flex-direction: column; /* Stack images vertically */
+        align-items: center;
+    }
+    .gallery-image {
+        width: 100%; /* Full width */
+        max-height: 300px;
+    }
+}
+
+/* ✅ Small Mobile View (Full Width, Maintain Clarity) */
+@media screen and (max-width: 480px) {
+    .gallery-image {
+        width: 100%;
+        max-height: 250px; /* Maintain clarity */
+        object-fit: contain; /* Prevents cropping */
+    }
+}
 
