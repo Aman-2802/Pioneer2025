@@ -120,7 +120,7 @@ body {
   justify-content: center;
   width: 90%;
   height: 300px;
-  background-image: url('/images/back.jpg');
+  background-image: url('back.jpg');
   /* Centering the div */
   position: absolute; /* Use fixed if you want it to remain in place on scroll */
   top: 50%;
