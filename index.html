@@ -687,7 +687,7 @@ Author URL: http://w3layouts.com
         // Dynamically adjust animation speed based on screen size
         function setScrollSpeed() {
             const totalWidth = container.scrollWidth / 2; // Half of total width for looping
-            let speedFactor = window.innerWidth <= 768 ? 150 : 100; // Faster on mobile
+            let speedFactor = window.innerWidth <= 768 ? 110 : 90; // Faster on mobile
             let duration = totalWidth / speedFactor; // Adjust speed (lower = faster)
             container.style.animationDuration = `${duration}s`;
         }
