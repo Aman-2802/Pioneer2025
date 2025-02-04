@@ -819,7 +819,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
       </script>
             <script>
-        document.addEventListener("DOMContentLoaded", function () {
+      document.addEventListener("DOMContentLoaded", function () {
     const tabs = document.querySelectorAll(".resp-tabs-list li");
     const contents = document.querySelectorAll(".products-content");
     
@@ -828,19 +828,25 @@ document.addEventListener("DOMContentLoaded", function() {
             // Hide all content
             contents.forEach(content => content.style.display = "none");
             
-            // Remove active class from all tabs
-            tabs.forEach(tab => tab.classList.remove("active"));
+            // Remove active class and reset color from all tabs
+            tabs.forEach(tab => {
+                tab.classList.remove("active");
+                tab.style.color = ""; // Reset to default color
+            });
             
             // Show the selected content and add active class to the clicked tab
             contents[index].style.display = "block";
+            
             tab.classList.add("active");
+            tab.style.color = "red"; // Change color of the active tab (you can use any color)
         });
     });
     
-    // Initially show only Day 1 content
+    // Initially show only Day 1 content and set its color
     contents.forEach(content => content.style.display = "none");
     contents[0].style.display = "block";
     tabs[0].classList.add("active");
+    tabs[0].style.color = "red"; // Set color for the initially active tab
 });
 
       </script>
