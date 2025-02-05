@@ -492,3 +492,95 @@ a {
         font-size: 13px;
     }
 }
+/* General Styling */
+.block_1 {
+  background-color: #f8f9fa; /* Light background */
+  padding: 50px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container_1 {
+  max-width: 1200px;
+  width: 100%;
+}
+
+.row_1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.inner_1 {
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.college-name {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.inner_1 p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #555;
+  text-align: justify;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .inner_1 {
+    padding: 25px;
+  }
+
+  .college-name {
+    font-size: 22px;
+  }
+
+  .inner_1 p {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 768px) {
+  .block_1 {
+    padding: 40px 15px;
+  }
+
+  .inner_1 {
+    padding: 20px;
+  }
+
+  .college-name {
+    font-size: 20px;
+  }
+
+  .inner_1 p {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .block_1 {
+    padding: 30px 10px;
+  }
+
+  .inner_1 {
+    padding: 15px;
+  }
+
+  .college-name {
+    font-size: 18px;
+  }
+
+  .inner_1 p {
+    font-size: 13px;
+  }
+}
