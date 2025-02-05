@@ -1,131 +1,6 @@
-section.event_img {
-    margin: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background-color: #f4f4f9;
-    font-family: Arial, sans-serif;
-    padding: 0;
-    margin: 0;
-}
-.event-container img{
-    padding-top: 10px;
-    width: 40%;
-    height:10%;
-}
-
-section.event_img .event-container {
-    width: 80%;
-    height: 400px;
-    padding: 30px 0; /* Adjusted padding to reduce top and bottom space */
-    text-align: center;
-    background: white;
-    border-radius: 12px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-    margin: auto;
-}
-
-section.event_img .event-container img {
-    max-width: 60%;
-    height: 50%;
-    border-radius: 8px;
-}
-
-section.event_img .event-container .event-date {
-    font-size: 3rem;
-    margin: 15px 0;
-    color: #333;
-    margin-top: 40px;
-}
-
-section.event_img .event-container .event-button {
-    display: inline-block;
-    padding: 10px 20px;
-    font-size: 2rem;
-    color: white;
-    background-color: #007BFF;
-    text-decoration: none;
-    border-radius: 8px;
-    transition: background-color 0.3s ease;
-}
-
-section.event_img .event-container .event-button:hover {
-    background-color: #0056b3;
-}
 
 
-section.block_1 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: auto;
-    background-color: #f4f4f9;
-    font-family: Arial, sans-serif;
-    padding: 40px 0;
-    margin-bottom: 30px; /* Reduced margin between blocks */
-}
 
-section.block_1 .container_1 {
-    width: 80%;
-    max-width: 1200px;
-    background: white;
-    border-radius: 12px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-    padding: 32px 16px;
-    text-align: center;
-    margin: 0 auto;
-}
-
-section.block_1 .container_1 .title_1 {
-    font-size: 3rem;
-    font-weight: bold;
-    margin-bottom: 20px;
-    color: #333;
-}
-
-section.block_1 .container_1 p {
-    font-size: 20px;
-    line-height: 1.6;
-    color: #555;
-    margin-bottom: 20px;
-}
-
-section.block_2 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: auto; /* Adjust as needed */
-    background-color: #f4f4f9;
-    font-family: Arial, sans-serif;
-    padding: 40px 0;
-    margin-top: 30px; /* Reduced margin between blocks */
-}
-
-section.block_2 .container_2 {
-    width: 80%; /* Same as the previous block */
-    max-width: 1200px; /* Ensures consistency with other sections if they use a max-width */
-    background: white;
-    border-radius: 12px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-    padding: 32px 16px; /* Matches the padding of other blocks */
-    text-align: center;
-    margin: 0 auto;
-}
-
-section.block_2 .container_2 .title_2 {
-    font-size: 3rem;
-    font-weight: bold;
-    margin-bottom: 20px;
-    color: #333;
-}
-
-section.block_2 .container_2 p {
-    font-size: 20px;
-    line-height: 1.6;
-    color: #555;
-    margin-bottom: 20px;
-}
 
 .scroll_img {
     width: 100%;
@@ -181,13 +56,7 @@ section.block_2 .container_2 p {
 }
 
 /* Default Styles */
-.container_1, .container_2 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 20px;
-    text-align: center;
-}
+
 
 /* Adjusting College Logo and Name */
 .college-header {
@@ -204,14 +73,10 @@ section.block_2 .container_2 p {
     height: auto;
 }
 
-.college-name {
-    font-size: 24px;
-    font-weight: bold;
-    text-align: center;
-}
+
 
 /* Event and Feature Sections */
-.event-container, .feature-container {
+.feature-container {
   
     flex-wrap: wrap;
     justify-content: center;
@@ -249,13 +114,12 @@ section.block_2 .container_2 p {
         width: 60%;
     }
 
-    .college-name {
-        font-size: 20px;
-    }
-
-    .event-container, .feature-container {
+   
+   
+.feature-container {
         flex-direction: column;
         gap: 10px;
+        margin: 0;
     }
 
     .event-box, .feature-box {
@@ -280,13 +144,14 @@ section.block_2 .container_2 p {
     div.event-date{
         font-size: 14px;
     }
-    .college-name {
-        font-size: 22px;
+    
+    section.event_img {
+        margin: 0 !important;
     }
-
-    .event-container, .feature-container {
+ .feature-container {
         justify-content: center;
         gap: 15px;
+        margin: 0;
     }
 
     .event-box, .feature-box {
@@ -301,28 +166,20 @@ section.block_2 .container_2 p {
     .college-header {
         justify-content: space-between;
     }
-
+   
     .college-logo img {
         width: 100px;
     }
     div.event-date{
         font-size: 14px;
     }
-    .college-name {
-        font-size: 26px;
-    }
+    
 
     .event-box, .feature-box {
         width: 30%;
     }
 }
-.event-container {
-  
-    flex-direction: column; /* Stack logo and text vertically */
-    align-items: center;
-    text-align: center;
-  }
-  
+
   .event-date {
     font-size: clamp(1rem, 4vw, 1.8rem); /* Adjust text dynamically */
     font-weight: bold;
@@ -340,4 +197,328 @@ section.block_2 .container_2 p {
       
     }
   }
+ 
+
+  .block-2 span{
+    color: #0b7daa;
+  }
   
+  /* nrw css */
+/* General Styling */
+.event_img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f5f5f5; /* Light gray background */
+    padding: 40px 20px;
+    min-height: 300px; /* Added height for better alignment */
+}
+
+.event-container {
+    text-align: center;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    width: 82%;
+    min-height: 250px; /* Ensuring minimum height */
+}
+
+.event-container img {
+    max-width: 30%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.event-date {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    margin-top: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .event_img {
+        padding: 30px 15px;
+        min-height: 150px;
+    }
+
+    .event-container {
+        padding: 15px;
+        max-width: 90%;
+        min-height: 150px;
+    }
+
+    .event-container img {
+        max-width: 40%;
+    }
+
+    .event-date {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .event_img {
+        padding: 20px 10px;
+        min-height: 100px;
+    }
+
+    .event-container {
+        padding: 10px;
+        min-height: 180px;
+    }
+
+    .event-container img {
+        max-width: 50%;
+    }
+
+    .event-date {
+        font-size: 14px;
+    }
+}
+
+/* General Styling for College Name */
+.college-name {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+/* Responsive Design for College Name */
+@media (max-width: 1024px) {
+    .college-name {
+        font-size: 22px;
+    }
+}
+
+@media (max-width: 768px) {
+    .college-name {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .college-name {
+        font-size: 18px;
+    }
+}
+
+/* General Styling */
+.block_2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f9f9f9; /* Light background for contrast */
+    padding: 50px 20px;
+    min-height: 400px; /* Ensuring minimum height */
+}
+
+.container_2 {
+    width: 80%;
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.title_2 {
+    text-align: center;
+    font-size: 28px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+
+.title-banner {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #444;
+    text-align: justify;
+}
+
+.title-banner a {
+    color: #007BFF;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.title-banner a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .container_2 {
+        width: 85%;
+        padding: 25px;
+    }
+
+    .title_2 {
+        font-size: 26px;
+    }
+
+    .title-banner {
+        font-size: 17px;
+    }
+}
+
+@media (max-width: 768px) {
+    .container_2 {
+        width: 90%;
+        padding: 20px;
+    }
+
+    .title_2 {
+        font-size: 24px;
+    }
+
+    .title-banner {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .block_2 {
+        padding: 30px 10px;
+        min-height: 350px;
+    }
+
+    .container_2 {
+        width: 95%;
+        padding: 15px;
+    }
+
+    .title_2 {
+        font-size: 22px;
+    }
+
+    .title-banner {
+        font-size: 15px;
+    }
+}
+
+/* General Styling */
+.w3l-banner1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f5f5f5;
+    padding: 50px 20px;
+}
+
+.gallery-container {
+    position: relative;
+    width: 85%;
+    overflow: hidden;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Image Wrapper */
+.gallery-wrapper {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    padding-bottom: 10px;
+    scrollbar-width: none; /* Hides scrollbar for Firefox */
+}
+
+.gallery-wrapper::-webkit-scrollbar {
+    display: none; /* Hides scrollbar for Chrome, Safari */
+}
+
+/* Image Styling */
+.gallery-image1 {
+    width: 100%;
+    max-height: 550px; /* Prevents images from becoming too tall */
+    object-fit: cover; /* Ensures the image covers the area properly */
+    border-radius: 8px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.gallery-image1:hover {
+    transform: scale(1.05);
+}
+
+/* Navigation Controls */
+.gallery-control {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 20px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.gallery-control:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .gallery-container {
+        width: 90%;
+        max-height: 500px;
+    }
+
+    .gallery-image1 {
+        max-height: 500px;
+    }
+}
+
+@media (max-width: 768px) {
+    .gallery-container {
+        width: 95%;
+        padding: 15px;
+        max-height: 400px;
+    }
+
+    .gallery-image1 {
+        max-height: 250px;
+    }
+
+    .gallery-control {
+        padding: 8px 12px;
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 480px) {
+    .gallery-container {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .gallery-wrapper {
+        gap: 5px;
+    }
+
+    .gallery-image1 {
+        max-height: 500px;
+    }
+
+    .gallery-control {
+        padding: 6px 10px;
+        font-size: 16px;
+    }
+}
