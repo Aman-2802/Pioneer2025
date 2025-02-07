@@ -15,23 +15,23 @@ h1, h3, h2 {
 
 /* Container Styles */
 .team-container {
-    padding: 50px 20px;
+    padding: 10px 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 100px;
-    margin-bottom: 100px;
+    margin-top: 90px;
+    margin-bottom: 90px;
 }
 
 /* Team Member Card Styles */
 .team-member, .commit-member, .volunteer {
     background: #D9DFC6;
-    padding: 40px;
+    padding: 30px;
     width:300px;
     text-align: center;
     border-radius: 15px;
     position: relative;
-    margin: 20px;
+    margin: 10px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
     transition: all 0.3s ease-in-out;
     opacity: 0;
@@ -82,6 +82,7 @@ h1, h3, h2 {
     height: 100%;
     object-fit:fill;  /* Ensures the image fits without cropping */
     object-position: center; /* Ensures the image is centered in the box */
+    border-radius: 20px;
 }
 
 .image img {
@@ -112,7 +113,7 @@ p {
 
 /* Commit Members Styles */
 .commit-members {
-    margin-top: 60px;
+  
     width: 100%;
     display: flex;
     justify-content: center;
@@ -125,7 +126,7 @@ div.CentralCommitee {
     justify-content: center;
     align-items: center;
     height: auto !important; /* Allow height to adjust */
-    padding: 20px;
+
 }
 
 /* Responsive Design */
@@ -157,10 +158,9 @@ div.CentralCommitee {
     margin-top: 70px;
     font-weight: bold;
     color: #d4af7a;
-    margin-bottom: 10px;
 }
 .commit-member .h3 {
-    margin-top: 100px;
+    margin-top: 60px;
 }
 
 /* Volunteers Styles */
